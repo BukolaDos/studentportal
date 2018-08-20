@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="header">
+                <a href="#default" class="logo" img alt="logo" src="logo3.png"></a>
+                <div class="header-right">
+                    <a class="active" href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Course Registration</a>
+                    <a href="#summary">Summary</a>
+                    <a href="#login">Logout</a>
+        
+                </div>
+            </div>
+            <div id="id01" class="modal">
+        
+                <form class="modal-content animate" action="/sucess.html">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+                    </div>
+        
+                    <div class="container">
+                        <h2>Fill Form To Register Course</h2>
+        
+                        <b>Faculty </b>
+                        <select class="form-control" name="dept" id="dept"> 
+                                <option>Select Faculty</option>
+                                <option>school of Engineering </option>
+                                <option>School of Information Management</option>
+                                <option>Department of Mathematics</option>
+                                <option>Department of Philosophy (Religious Studies)</option>
+                                <option>School of Liberal Arts</option>
+                                <option>School of Law</option>
+                                <option>School of Business</option>
+                                <option>Department of Computer Science and Technology</option>
+                                <option>Department of Law</option>
+                                <option>school of Engineering </option>
+                                <option>School of Information Management</option>
+                                <option>Department of Mathematics</option>
+                                <option>Department of Philosophy (Religious Studies)</option>
+                            </select>
+                        </br>
+        
+                            <b>Course </b>
+                        </label>
+                        </br>
+                        <select class="form-control" name="dept" id="dept"> 
+                                <option>Select courses</option>
+                                <option>school of Engineering </option>
+                                <option>School of Information Management</option>
+                                <option>Department of Mathematics</option>
+                                <option>Department of Philosophy (Religious Studies)</option>
+                                <option>School of Liberal Arts</option>
+                                <option>School of Law</option>
+                                <option>School of Business</option>
+                                <option>Department of Computer Science and Technology</option>
+                                <option>Department of Law</option>
+                                <option>school of Engineering </option>
+                                <option>School of Information Management</option>
+                                <option>Department of Mathematics</option>
+                                <option>Department of Philosophy (Religious Studies)</option>
+                            </select>
+                        </br>
+        
+                        <label for="phone">
+                            <b>Phone Number</b>
+                        </label>
+                        </br>
+                        <input type="tel" id="phone" name="phone" placeholder="08020000000">
+        
+                        </br>
+        
+        
+                        <button type="submit">REGISTER</button>
+        
+                    </div>
+        
+                    <div class="container2" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        
+                    </div>
+                </form>
+            </div>
+        
+           
+    <div class="container">
+        <form class="form-horizontal" id="form_members" role="form">
+            <legend>Student Registration</legend>
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2">First Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First Name">
+                </div>
+                <label for="lastname" class="col-sm-2">Last Name</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gender" class="col-sm-2">Gender</label>
+                <div class="col-sm-4">
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="male" value="male"> Male
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="gender" id="female" value="female"> Female
+                    </label>
+                </div>
+                <label for="dob" class="col-sm-2">Date of Birth</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" name="dob" id="dob" placeholder="mm/dd/yyyy">
+                </div>
+            </div>
+            <legend>Faculty</legend>
+            <div class="form-group">
+                <label for="Faculty" class="col-sm-2">Faculty</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" name="address" id="address" placeholder="faculty">
+                </div>
+                <label for="city" class="col-sm-2">level</label>
+                <div class="col-sm-4">
+                    <select class="form-control" name="region" id="region">
+                        <option>Select level</option>
+                        <option>level 1</option>
+                        <option>level 2</option>
+                        <option>level 3</option>
+                        <option>level 4</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-warning" name="submit" id="submit">Submit</button>
+                </div>
+
+                <script type="text/javascript">
+        
+                    var modal = document.getElementById('id01');
+            
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            
+            
+                <script src="js/jquery-1.12.1.min.js"></script>
+                
+                </script>
+            
+                <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
